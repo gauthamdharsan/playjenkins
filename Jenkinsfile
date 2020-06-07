@@ -15,7 +15,7 @@ node{
         sh 'docker push gauthamdharsan/myweb:1'
      }
      
-     stage("Deploy To Kuberates Cluster"){
+     stage("Deploy To Kubernetes Cluster"){
        kubernetesDeploy(
          configs: 'myweb.yaml', 
          kubeconfigId: 'kube-config',
